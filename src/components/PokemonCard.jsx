@@ -20,7 +20,7 @@ const PokemonCard = ({ pokemon, onTypeSelect }) => {
   return (
     <div className="pokemon-card">
       <div className="pokemon-header">
-        <h3>#{pokemon.id.toString().padStart(3, '0')}</h3>
+        <h3>{pokemon.id.toString().padStart(3, '0')}</h3>
         <div 
           className="type-filter-icon"
           onClick={() => setShowTypeMenu(!showTypeMenu)}

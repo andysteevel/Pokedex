@@ -52,7 +52,7 @@ const PokemonDetails = () => {
       
       <div className="pokemon-header">
         <h1>{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</h1>
-        <h2>#{pokemon.id.toString().padStart(3, '0')}</h2>
+        <h2>{pokemon.id.toString().padStart(3, '0')}</h2>
       </div>
       
       <div className="pokemon-main">

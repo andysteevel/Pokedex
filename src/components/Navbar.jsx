@@ -3,14 +3,16 @@ import pokemonLogo from "../assets/Pokedx-3D.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100px', paddingLeft: "38%" }}>
-      <div className="navbar-container">
+    <>
+    <nav >
+      <div className="flex justify-center items-center p-10 bg-black">
         <Link to="/" className="navbar-logo">
-          <img src={pokemonLogo} alt="Pokemon Logo" height="70"  />
+          <img src={pokemonLogo} alt="Pokemon Logo" className="h-44 rounded-full"  />
         </Link>
         
       </div>
     </nav>
+    </>
   );
 };
 

@@ -74,7 +74,7 @@ const PokemonList = () => {
 
   return (
     <div className="pokemon-list">
-      <h1>Pokédex</h1>
+      <h1 className='text-blue-700 font-bold text-3xl text-center'>Pokédex</h1>
       
       {/* Barre de recherche et filtre de type */}
       <div className="search-filter-container">
@@ -91,7 +91,7 @@ const PokemonList = () => {
               onClick={() => setSearchTerm('')}
               className="clear-search"
             >
-              ×
+              X
             </button>
           )}
         </div>
@@ -99,7 +99,7 @@ const PokemonList = () => {
         <select
           value={selectedType}
           onChange={(e) => setSelectedType(e.target.value)}
-          className="type-select"
+          className="type-select outline-0 border bg-blue-800 font-bold text-white rounded-full px-2"
         >
           <option value="all">Tous les types</option>
           {types.map((type) => (
